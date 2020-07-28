@@ -384,5 +384,6 @@
     </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.751" level="application_server_libraries" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="lib1" level="project" />
   </component>
 </module>
