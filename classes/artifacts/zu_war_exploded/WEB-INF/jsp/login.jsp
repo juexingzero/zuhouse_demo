@@ -25,9 +25,9 @@
 		<label class="radio inline">
       	  	<input id="admin" type="radio" name="type" value="admin"  checked/> 管理员
 		</label>
-		<label class="radio inline">
+<%--		<label class="radio inline">
 			<input id="zuke" type="radio" name="type" value="zuke" } /> 租客
-		</label>
+		</label>--%>
 		</div>
         
 			<button type="submit" id="login-button">登录</button>

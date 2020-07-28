@@ -32,9 +32,9 @@
                         
                         success:function(data){
                                 // 你的具体操作
-                                // alert(data);
+                                console.log(data);
                                 $("#inside").html(data);
-                                alert("成功");
+                                //alert("成功");
                                 
                         },
                         error: function() {  
@@ -75,8 +75,8 @@
                     <a class="a"><i class="icon-font">&#xe003;</i>房源信息</a>
                     <div class="p"><ul class="sub-menu">
                         <li><a href="/text2/houselist.action"><i class="icon-font">&#xe008;</i>房源列表</a></li>
-                        
-       
+
+
                     </ul>
                     </div>
                 </li>
@@ -85,7 +85,7 @@
                  <div class="p"><ul class="sub-menu">
                         <li><a href="/text2/zulist/myzulist.action"><i class="icon-font">&#xe017;</i>我的租赁</a></li>
                         <li><a href="/text2/checkout/getmycheckout.action"><i class="icon-font">&#xe037;</i>已退租列表</a></li>
-                        
+
                     </ul>
                     </div>
                 </li>

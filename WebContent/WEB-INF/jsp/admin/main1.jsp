@@ -32,9 +32,9 @@
                         
                         success:function(data){
                                 // 你的具体操作
-                                // alert(data);
+                                console.log(data);
                                 $("#inside").html(data);
-                                alert("成功");
+                                //alert("成功");
                                 
                         },
                         error: function() {  
@@ -72,43 +72,50 @@
         <div class="sidebar-content">
             <ul class="sidebar-list">
                 <li>
-                    <a class="a"><i class="icon-font">&#xe003;</i>房源信息</a>
+                    <a class="a"><i class="icon-font">&#xe003;</i>基础信息维护</a>
+                    <div class="p"><ul class="sub-menu"><%--房源信息--%>
+                        <li><a href="/text2/ahouselist.action"><i class="icon-font">&#xe008;</i>房屋信息维护</a></li>
+                        <li><a href="/text2/houselist.action"><i class="icon-font">&#xe008;</i>承租方信息管理</a></li>
+                        <li><a href="/text2/houselist.action"><i class="icon-font">&#xe008;</i>承租方账号管理</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="a"><i class="icon-font">&#xe018;</i>安全管理</a>
+                    <div class="p"><ul class="sub-menu"><%--租赁信息--%>
+                        <li><a href="/text2/zulist/myzulist.action"><i class="icon-font">&#xe008;</i>现状评定</a></li><%--我的租赁--%>
+                        <li><a href="/text2/checkout/getmycheckout.action"><i class="icon-font">&#xe008;</i>巡检管理</a></li>
+                        <li><a href="/text2/checkout/getmycheckout.action"><i class="icon-font">&#xe008;</i>隐患情况记录</a></li>
+                        <li><a href="/text2/checkout/getmycheckout.action"><i class="icon-font">&#xe008;</i>整改情况说明</a></li><%--已退租列表--%>
+                    </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="a"><i class="icon-font">&#xe018;</i>房屋租赁管理</a>
                     <div class="p"><ul class="sub-menu">
-                        <li><a href="/text2/ahouselist.action"><i class="icon-font">&#xe008;</i>房源列表</a></li>
-                         <li><a href="/text2/toaddhouse.action"><i class="icon-font">&#xe008;</i>添加房源</a></li>
-       
+                        <li><a href="/text2/zulist/findzulist.action"><i class="icon-font">&#xe008;</i>招标管理</a></li>
+                        <li><a href="/text2/checkout/getallcheckout.action"><i class="icon-font">&#xe008;</i>投标管理</a></li>
+                        <li><a href="/text2/checkout/getallcheckout.action"><i class="icon-font">&#xe008;</i>合同管理</a></li>
                     </ul>
                     </div>
                 </li>
                 <li>
-                    <a class="a"><i class="icon-font">&#xe018;</i>租赁及合同信息</a>
-             <div class="p">         <ul class="sub-menu">
-                        <li><a href="/text2/zulist/findzulist.action"><i class="icon-font">&#xe017;</i>在租列表</a></li>
-                      
-                        <li><a href="/text2/checkout/getallcheckout.action"><i class="icon-font">&#xe037;</i>已退租列表</a></li>
-                        
-                    </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="a"><i class="icon-font">&#xe018;</i>申请列表</a>
-        <div class="p">            <ul class="sub-menu">
-                        <li><a href="/text2/findapplylist.action"><i class="icon-font">&#xe037;</i>看房申请</a></li>
-                       	<li><a href="/text2/applyout/findallapplyout.action"><i class="icon-font">&#xe037;</i>退租申请</a></li>
-                        
+                    <a class="a"><i class="icon-font">&#xe018;</i>收款管理</a>
+                        <div class="p"><ul class="sub-menu">
+                        <li><a href="/text2/findapplylist.action"><i class="icon-font">&#xe008;</i>收款登记</a></li>
                     </ul>
                      </div>
                 </li>
                 <li>
-                    <a class="a"><i class="icon-font">&#xe018;</i>报障模块</a>
+                    <a class="a"><i class="icon-font">&#xe018;</i>统计报表</a>
        <div class="p">              <ul class="sub-menu">
-                        <li><a href="/text2/wrong/wronglist.action"><i class="icon-font">&#xe017;</i>待处理报障</a></li>
-                       	<li><a href="/text2/wrong/selectall.action"><i class="icon-font">&#xe017;</i>已处理报障</a></li>
-                        
+                        <li><a href="/text2/wrong/wronglist.action"><i class="icon-font">&#xe008;</i>房屋信息明细表</a></li>
+                       	<li><a href="/text2/wrong/selectall.action"><i class="icon-font">&#xe008;</i>租赁明细表</a></li>
+                        <li><a href="/text2/wrong/selectall.action"><i class="icon-font">&#xe008;</i>房屋收款明细</a></li>
                     </ul>
                      </div>
                 </li>
-                 <li>
+                 <%--<li>
                     <a class="a"><i class="icon-font">&#xe003;</i>租金信息</a>
             <div class="p">          <ul class="sub-menu">
                     <li><a href="/text2/paid/showaddpaid.action"><i class="icon-font">&#xe008;</i>我要收租</a></li>
@@ -135,7 +142,7 @@
                         
                     </ul>
                     </div>
-                </li>
+                </li>--%>
             </ul>
         </div>
      </div>
